@@ -5,6 +5,9 @@ INSERT INTO tb_roles(id_rol, nombre_rol) VALUES
 /*------CATALOGOS EMPRESAS-----*/
 /*tb_tipos_UsosCFDI*/  /*uso compartido con receptor*/
 /*tb_tipos_regimenes_fiscales*/ /*uso compartido con receptor*/
+INSERT INTO tb_tipos_domicilios_fiscales_empresas(id_tipo_domicilio_fiscal_empresa, codigo_postal) VALUES 
+(1, 'CodigoPostal'),
+(2, 'CodigoPostal');
 INSERT INTO tb_paises(id_pais, nombre_pais, clave) VALUES 
 (1, 'Mexico', 'MEX');
 
@@ -21,6 +24,9 @@ INSERT INTO tb_tipos_comprobantes(id_tipo_comprobante, tipo, clave) VALUES
 INSERT INTO tb_tipos_metodos_pagos(id_tipo_metodo_pago, tipo, clave) VALUES 
 (1, 'PAGO EN UNA SOLA EXHIBICIÓN', 'PUE'),
 (2, 'PAGO EN PARCIALES', 'PPD');
+INSERT INTO tb_tipos_lugares_expediciones(id_tipo_lugar_expedicion, codigo_postal) VALUES 
+(1, 'CodigoPostal'),
+(2, 'CodigoPostal');
 INSERT INTO tb_tipos_exportaciones(id_tipo_exportacion, tipo, clave) VALUES 
 (1, 'NO APLICA', '01'),
 (2, 'DEFINITIVA', '02'),
@@ -31,6 +37,9 @@ INSERT INTO tb_tipos_UsosCFDI(id_tipo_UsoCFDI, tipo, clave) VALUES
 (1, 'FALTA', 'G03'),
 (2, 'FALTA', 'P01'),
 (3, 'FALTA', 'CN01');
+INSERT INTO tb_tipos_domicilios_fiscales_receptores(id_tipo_domicilio_fiscal_receptor, codigo_postal) VALUES 
+(1, 'CodigoPostal'),
+(2, 'CodigoPostal');
 INSERT INTO tb_tipos_regimenes_fiscales(id_tipo_regimen_fiscal, tipo, clave) VALUES 
 (1, 'GENERAL', '601'),
 (2, 'SUELDOS Y SALARIOS', '605');
