@@ -13,6 +13,6 @@ CREATE TABLE tb_datos_CFDI40(
     id_tipo_lugar_expedicion INT NOT NULL, /*falta query*/
     id_tipo_exportacion INT NOT NULL,
     id_usuario INT NOT NULL,
-    id_receptor_CFDI40 INT NOT NULL,
+    id_empresa INT NOT NULL,
     PRIMARY KEY(id_dato_CFDI40)
 );

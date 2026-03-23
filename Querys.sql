@@ -1,3 +1,4 @@
+-- Active: 1705371367786@@127.0.0.1@3307@control_fiscal
 /*-----CATALOGOS USUARIOS-----*/
 INSERT INTO tb_roles(id_rol, nombre_rol) VALUES 
 (1, 'Administrador'),

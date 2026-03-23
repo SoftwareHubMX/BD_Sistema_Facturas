@@ -7,6 +7,13 @@ CREATE TABLE tb_usuarios(
     apellido_paterno TEXT NOT NULL,
     apellido_materno TEXT NOT NULL,
     PRIMARY KEY (id_usuario)
+); 
+create table tb_contactos_usuarios(
+    id_contacto_usuario int not null AUTO_INCREMENT,
+    correo text not null,
+    telefono text not null,
+    id_usuario int not null,
+    PRIMARY KEY(id_contacto_usuario)
 );
 CREATE TABLE tb_tokens_logins(
     id_token_login int not null AUTO_INCREMENT, 
