@@ -3,6 +3,7 @@
 INSERT INTO tb_roles(id_rol, nombre_rol) VALUES 
 (1, 'Administrador'),
 (2, 'Usuario');
+
 /*------CATALOGOS EMPRESAS-----*/
 /*tb_tipos_UsosCFDI*/  /*uso compartido con receptor*/
 /*tb_tipos_regimenes_fiscales*/ /*uso compartido con receptor*/
@@ -61,7 +62,6 @@ INSERT INTO tb_tipos_UsosCFDI(id_tipo_UsoCFDI, tipo, clave) VALUES
 (1, 'Adquisición de mercancías', 'G01'),
 (2, 'Devoluciones, descuentos o bonificaciones', 'G02'),
 (3, 'Gastos en general', 'G03'),
-
 (4, 'Construcciones', 'I01'),
 (5, 'Mobiliario y equipo de oficina', 'I02'),
 (6, 'Equipo de transporte', 'I03'),
@@ -70,7 +70,6 @@ INSERT INTO tb_tipos_UsosCFDI(id_tipo_UsoCFDI, tipo, clave) VALUES
 (9, 'Comunicaciones telefónicas', 'I06'),
 (10, 'Comunicaciones satelitales', 'I07'),
 (11, 'Otra maquinaria y equipo', 'I08'),
-
 (12, 'Honorarios médicos, dentales y hospitalarios', 'D01'),
 (13, 'Gastos médicos por incapacidad o discapacidad', 'D02'),
 (14, 'Gastos funerales', 'D03'),
@@ -80,8 +79,7 @@ INSERT INTO tb_tipos_UsosCFDI(id_tipo_UsoCFDI, tipo, clave) VALUES
 (18, 'Primas de seguros de gastos médicos', 'D07'),
 (19, 'Gastos de transportación escolar obligatoria', 'D08'),
 (20, 'Depósitos en cuentas para el ahorro o pensiones', 'D09'),
-(21, 'Pagos por servicios educativos (colegiaturas)', 'D10');
-
+(21, 'Pagos por servicios educativos (colegiaturas)', 'D10'),
 (22, 'Sin efectos fiscales', 'S01'),
 (23, 'Pagos', 'CP01'),
 (24, 'Nómina', 'CN01');
@@ -167,17 +165,17 @@ INSERT INTO tb_tipos_productos_servicios(id_tipo_producto_servicio, tipo, clave)
 
 
 INSERT INTO tb_tipos_unidades(id_tipo_unidad, tipo, clave) VALUES 
-(1,  'Pieza',     'Pieza (H87)'),
-(2,  'Kilogramo', 'Kilogramo (KGM)'),
-(3,  'Metro',     'Metro (MTR)'),
-(4,  'Kit',       'Kit (KT)'),
-(5,  'Litro',     'Litro (LTR)'),
-(6,  'Caja',      'Caja (XBX)'),
-(7,  'Hora',      'Hora (HUR)'),
-(8,  'Paquete',   'Paquete (XPK)'),
-(9,  'Gramo',     'Gramo (GRM)'),
-(10, 'Día',       'Día (DAY)'),
-(11, 'Lote',      'Lote (XLT)');
+(1,  'Pieza',     'H87'),
+(2,  'Kilogramo', 'KGM'),
+(3,  'Metro',     'MTR'),
+(4,  'Kit',       'KT'),
+(5,  'Litro',     'LTR'),
+(6,  'Caja',      'XBX'),
+(7,  'Hora',      'HUR'),
+(8,  'Paquete',   'XPK'),
+(9,  'Gramo',     'GRM'),
+(10, 'Día',       'DAY'),
+(11, 'Lote',      'XLT');
 
 INSERT INTO tb_tipos_objetos_impuestos(id_tipo_objeto_impuesto, tipo, clave) VALUES 
 (1,  'NO OBJETO DE IMPUESTO','01'),
